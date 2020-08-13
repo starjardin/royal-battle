@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Royal battle</title>
-    <link rel="stylesheet" href="../webroot/css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -13,29 +13,41 @@
         <nav class="header-navigation">
             <h1 class="sos-logo">
                 <a href="/home_page" class="menu">
-                    <img src="menu-icon.svg" alt="">
+                    <img src="./img/logo.svg" alt="">
                 </a>
             </h1>
+            <form action="." method="GET">
+                <label for="lang_dropdown">Language</label>
+                <select name="lang" id="lang_dropdown">
+                <option lang="en" value="en" label="English">
+                <option lang="ru" value="ru" label="русский">
+                <option lang="fr" value="fr" label="Français">
+                <option lang="de" value="de" label="Deutsch">
+              </select>
+                <button type="submit">Save</button>
+            </form>
             <a href="/menu"><span>Menu</span></a>
         </nav>
     </header>
     <main>
         <header class="masthead">
-            <h1 class="mast_heading">
-                Survive at all costs.
-            </h1>
-            <p class="">
-                Experience social battle royal game
-            </p>
-            <button class="btn">Buy now on steam $14.99</button>
-            <p class="story">
-                The story
-            </p>
+            <div class="masthead-container">
+                <h1 class="mast_heading">
+                    Survive at all costs.
+                </h1>
+                <p class="">
+                    Experience social battle royal game
+                </p>
+                <button class="btn">Buy now on steam $14.99</button>
+                <p class="story">
+                    The story
+                </p>
+            </div>
         </header>
 
         <section class="section_sos">
             <header>
-                <h3 class="sos_heading">Waht is sos</h3>
+                <h3 class="sos_heading">What is sos</h3>
                 <h2 class="sos_subhading">Social battle royal game</h2>
             </header>
             <p>Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape?
@@ -43,9 +55,7 @@
             <p>
                 Making the right decisions could be the difference between life and death.
             </p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
+            <img src="./img/screenshot-moniment.png" alt="moniment">
         </section>
 
         <section class="section_specail">
@@ -109,7 +119,7 @@
             <ul class="people_lists">
                 <li>
                     <p class="profile">
-                        <img src="" alt="">
+                        <img src="./img/evan.svg" alt="Evan">
                         <p class="profile_info">
                             <a href="">Evan Lahti</a>
                             <span>Pc gamer</span>
@@ -128,7 +138,7 @@
 
                 <li>
                     <p class="profile">
-                        <img src="" alt="">
+                        <img src="./img/jada.svg" alt="Jada">
                         <p class="profile_info">
                             <a href="">Jada Griffin </a>
                             <span>Nerdreactor</span>
@@ -147,7 +157,7 @@
 
                 <li>
                     <p class="profile">
-                        <img src="" alt="">
+                        <img src="./img/aaron.svg" alt="Aaron">
                         <p class="profile_info">
                             <a href="">Aaron Williams</a>
                             <span>Uproxx</span>
@@ -220,7 +230,12 @@
                     </li>
                 </ul>
                 <ul class="list_icons">
-                    <li><a href="/facebook"><span>Facebook</span></a></li>
+                    <li>
+                        <a href="/facebook">
+                            <span>Facebook</span>
+                            <img src="./img/facebook.svg" alt="">
+                        </a>
+                    </li>
                     <li><a href="/twitter"><span>Twitter</span></a></li>
                     <li><a href="/youtube"><span>Youtube</span></a></li>
                     <li><a href="/video"><span>Video</span></a></li>

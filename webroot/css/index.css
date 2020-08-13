@@ -1,2 +1,53 @@
-h2 {
-  color: red; }
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: italic;
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: italic; }
+
+body {
+  font-family: "OpenSans"; }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: italic;
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: italic; }
+
+.header-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.header {
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0; }
+
+.masthead-container {
+  background-image: url("../img/masthead-bg-resised.png");
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  margin: 0;
+  padding-top: 400px;
+  padding-bottom: 400px; }
+
+img {
+  width: 100%;
+  height: 100%; }
