@@ -1,5 +1,22 @@
+@import "variables";
 .header-navigation {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+
+.header {
+    position: absolute;
+    top: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+.masthead-container {
+    background-image: image('masthead-bg-resised.png');
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    margin: 0;
+    padding-top: 400px;
+    padding-bottom: 400px;
 }
