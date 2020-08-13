@@ -1,4 +1,5 @@
-@mixin reset-nav {
+@mixin reset-ul {
     margin: 0;
+    padding: 0;
     list-style: $list-style;
 }
