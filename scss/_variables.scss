@@ -1,4 +1,5 @@
-$color: red;
+@import "mixin";
+$list-style: none;
 // From _variables.scss:
 @function image($filename) {
     @return url("../img/#{$filename}");
