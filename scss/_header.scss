@@ -1,5 +1,10 @@
 @import "variables";
 .header-navigation {
+    max-width: 455px;
+}
+
+.header-navigation,
+.navigation-option {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -10,13 +15,42 @@
     top: 50px;
     margin: 0;
     padding: 0;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
 }
 
-.masthead-container {
+.masthead {
+    width: 100vw;
+    height: 100vh;
     background-image: image('masthead-bg-resised.png');
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center center;
     margin: 0;
     padding-top: 400px;
     padding-bottom: 400px;
+}
+
+;
+.menu {
+    display: block;
+    background-image: url("../img/menu-icon.svg");
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 18px;
+}
+
+.menu>span {
+    visibility: hidden;
+}
+
+;
+.submit {
+    visibility: hidden;
+}
+
+;
+[for="lang_dropdown"] {
+    visibility: hidden;
+    display: none;
 }
