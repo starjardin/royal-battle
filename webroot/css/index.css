@@ -2,34 +2,121 @@
   font-family: "OpenSans";
   font-weight: 400;
   font-style: normal;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
   font-family: "OpenSans";
   font-weight: 400;
   font-style: italic;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: italic;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
   font-family: "BebasNeue";
   font-weight: 400;
   font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
   font-family: "BebasNeue";
   font-weight: 700;
-  font-style: italic; }
+  font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: italic;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: italic;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
 
 body {
-  font-family: "OpenSans"; }
+  font-family: "OpenSans";
+  text-align: center; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+  margin: 0; }
+
+.container {
+  margin: auto;
+  max-width: 500px; }
 
 @font-face {
   font-family: "OpenSans";
   font-weight: 400;
   font-style: normal;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
   font-family: "OpenSans";
   font-weight: 400;
   font-style: italic;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: italic;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
   font-family: "BebasNeue";
   font-weight: 400;
   font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
   font-family: "BebasNeue";
   font-weight: 700;
-  font-style: italic; }
+  font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: italic;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: italic;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
 
 .header-navigation {
+  max-width: 455px; }
+
+.header-navigation,
+.navigation-option {
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -38,15 +125,37 @@ body {
   position: absolute;
   top: 50px;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  margin-inline-start: auto;
+  margin-inline-end: auto; }
 
-.masthead-container {
+.masthead {
+  width: 100vw;
+  height: 100vh;
   background-image: url("../img/masthead-bg-resised.png");
   background-repeat: no-repeat;
-  background-size: 100vw;
+  background-size: cover;
+  background-position: center center;
   margin: 0;
   padding-top: 400px;
   padding-bottom: 400px; }
+
+.menu {
+  display: block;
+  background-image: url("../img/menu-icon.svg");
+  background-repeat: no-repeat;
+  width: 24px;
+  height: 18px; }
+
+.menu > span {
+  visibility: hidden; }
+
+.submit {
+  visibility: hidden; }
+
+[for="lang_dropdown"] {
+  visibility: hidden;
+  display: none; }
 
 img {
   width: 100%;

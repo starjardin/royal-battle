@@ -10,28 +10,32 @@
 
 <body>
     <header class="header">
-        <nav class="header-navigation">
-            <h1 class="sos-logo">
-                <a href="/home_page" class="menu">
-                    <img src="./img/logo.svg" alt="">
-                </a>
-            </h1>
-            <form action="." method="GET">
-                <label for="lang_dropdown">Language</label>
-                <select name="lang" id="lang_dropdown">
-                <option lang="en" value="en" label="English">
+        <div class="container">
+            <nav class="header-navigation">
+                <h1 class="sos-logo">
+                    <a href="/home_page" class="game_logo">
+                        <img src="./img/logo.svg" alt="">
+                    </a>
+                </h1>
+                <div class="navigation-option">
+                    <form action="." method="GET">
+                        <label for="lang_dropdown">Language</label>
+                        <select name="lang" id="lang_dropdown">
+                <option lang="en" value="en" label="Eng">
                 <option lang="ru" value="ru" label="русский">
                 <option lang="fr" value="fr" label="Français">
                 <option lang="de" value="de" label="Deutsch">
               </select>
-                <button type="submit">Save</button>
-            </form>
-            <a href="/menu"><span>Menu</span></a>
-        </nav>
+                        <button type="submit" class="submit">Save</button>
+                    </form>
+                    <a href="/menu" class="menu"><span>Menu</span></a>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <header class="masthead">
-            <div class="masthead-container">
+            <div class="container">
                 <h1 class="mast_heading">
                     Survive at all costs.
                 </h1>
@@ -45,42 +49,47 @@
             </div>
         </header>
 
-        <section class="section_sos">
-            <header>
-                <h3 class="sos_heading">What is sos</h3>
-                <h2 class="sos_subhading">Social battle royal game</h2>
-            </header>
-            <p>Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape?
-            </p>
-            <p>
-                Making the right decisions could be the difference between life and death.
-            </p>
-            <img src="./img/screenshot-moniment.png" alt="moniment">
-        </section>
-
-        <section class="section_specail">
-            <header>
-                <h2 class="special">What'so special</h2>
-                <h3 class="features">Features</h3>
-            </header>
-
-            <p class="process">
-                survival at all costs
-                <p class="process_info">
-                    You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.
+        <article class="article_sos">
+            <div class="container">
+                <header>
+                    <h3 class="sos_heading">What is sos</h3>
+                    <h2 class="sos_subhading">Social battle royal game</h2>
+                </header>
+                <p>Each round, you and 15 other contestants compete to escape a deadly island filled with monsters. The trick is: three people can survive. Will you run solo or form friendships with others to escape?
                 </p>
-            </p>
-            <p class="process">create allies and enemies</p>
-            <p class="process">Impress the audiance</p>
-        </section>
+                <p>
+                    Making the right decisions could be the difference between life and death.
+                </p>
+                <img src="./img/screenshot-moniment.png" alt="moniment">
+        </article>
+        </div>
 
-        <section class="secion_availability">
-            <header class="availability__heading">
-                <h3 class="availability__subheadquestion">Can My Computer Run this game?</h3>
-                <h2 class="availability__subheading">system requirements</h2>
-            </header>
+        <article class="article_specail">
+            <div class="container">
+                <header>
+                    <h2 class="special">What'so special</h2>
+                    <h3 class="features">Features</h3>
+                </header>
 
-            <dfn class="def_lists">
+                <p class="process">
+                    survival at all costs
+                    <p class="process_info">
+                        You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue chopper.
+                    </p>
+                </p>
+                <p class="process">create allies and enemies</p>
+                <p class="process">Impress the audiance</p>
+        </article>
+        </div>
+
+        <article class="secion_availability">
+            <div class="container">
+                <header class="availability__heading">
+                    <h3 class="availability__subheadquestion">Can My Computer Run this game?</h3>
+                    <h2 class="availability__subheading">system requirements</h2>
+                </header>
+
+                <dfn class="def_lists">
               <dt class="def_title">os:</dt>
               <dd class="def_details">Windows 7 64-bit only
                 (No OSX support at this time)</dd>
@@ -98,159 +107,210 @@
               <dd class="def_details">NVIDIA GeForce GTX 660 2GB or 
                 AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)</dd>
             </dfn>
-        </section>
+        </article>
+        </div>
 
-        <section class="press_quotes">
-            <header>
-                <h3>
-                    What people
-                </h3>
-                <h2>
-                    Press quotes
-                </h2>
-            </header>
+        <article class="press_quotes">
+            <div class="container">
+                <header>
+                    <h3>
+                        What people
+                    </h3>
+                    <h2>
+                        Press quotes
+                    </h2>
+                </header>
 
-            <p>
-                Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
-            </p>
+                <p>
+                    Our goal is to create a product and service that you’re satisfied with and use it every day. This is why we’re constantly working on our services to make it better every day and really listen to what our users has to say.
+                </p>
 
-            <button class="bnt read_more">Read more testemonials</button>
+                <button class="bnt read_more">Read more testemonials</button>
 
-            <ul class="people_lists">
-                <li>
-                    <p class="profile">
-                        <img src="./img/evan.svg" alt="Evan">
-                        <p class="profile_info">
-                            <a href="">Evan Lahti</a>
-                            <span>Pc gamer</span>
-                        </p>
-                        <p class="page_twitter">
-                            <span>Twitter</span>
-                        </p>
-                    </p>
-                    <blockquote>
-                        <q>One of my gaming highlights of the year.</q>
-                    </blockquote>
-                    <small>
-                      October 18, 2018
-                    </small>
-                </li>
-
-                <li>
-                    <p class="profile">
-                        <img src="./img/jada.svg" alt="Jada">
-                        <p class="profile_info">
-                            <a href="">Jada Griffin </a>
-                            <span>Nerdreactor</span>
-                        </p>
-                        <p class="page_twitter">
-                            <span>Twitter</span>
-                        </p>
-                    </p>
-                    <blockquote>
-                        <q>The next big thing in the world of streaming and survival games.</q>
-                    </blockquote>
-                    <small>
+                <blockquote>
+                    <header>
+                        <div class="container">
+                            <div>
+                                <h1 class="sos-logo">
+                                    <img src="./img/evan.svg" alt="Evan">
+                                    <span>Profile</span>
+                                    </a>
+                                </h1>
+                                <div>
+                                    <p class="profile_info">
+                                        <a href="">Evan Lahti</a>
+                                        <span>Pc gamer</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="icon-twitter">
+                                <a href="/twitter">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</q>
+                    </main>
+                    <footer>
+                        <small>
+            December 24, 2018
+          </small>
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    <header>
+                        <div class="container">
+                            <div>
+                                <h1 class="sos-logo">
+                                    <img src="./img/jada.svg" alt="Jada">
+                                    <span>Profile</span>
+                                    </a>
+                                </h1>
+                                <div>
+                                    <p class="profile_info">
+                                        <a href="">Jada Griffin </a>
+                                        <span>Nerdreactor</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="icon-twitter">
+                                <a href="/twitter">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
+                        <p class="profile_info">The next big thing in the world of streaming and survival games.</p>
+                    </main>
+                    <footer>
+                        <small>
                       December 21, 2018
                     </small>
-                </li>
-
-                <li>
-                    <p class="profile">
-                        <img src="./img/aaron.svg" alt="Aaron">
+                    </footer>
+                </blockquote>
+                <blockquote>
+                    <header>
+                        <div class="container">
+                            <div>
+                                <h1 class="sos-logo">
+                                    <img src="./img/aaron.svg" alt="Aaron">
+                                    <span>Profile</span>
+                                    </a>
+                                </h1>
+                                <div>
+                                    <p class="profile_info">
+                                        <a href="">Aaron Williams</a>
+                                        <span>Uproxx</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="icon-twitter">
+                                <a href="/twitter">
+                                    <span>Twitter</span>
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                    <main>
                         <p class="profile_info">
-                            <a href="">Aaron Williams</a>
-                            <span>Uproxx</span>
+                            Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.
                         </p>
-                        <p class="page_twitter">
-                            <span>Twitter</span>
+                    </main>
+                    <footer>
+                        <small>
+              December 24, 2018
+            </small>
+                    </footer>
+                </blockquote>
+            </div>
+        </article>
+
+        <article class="want-to-stay">
+            <div class="container">
+                <header>
+                    <h3 class="want-to-stay__heading">
+
+                    </h3>
+                    <h2>
+                        Newsletter subscribe
+                    </h2>
+                </header>
+                <p class="want-to-stay__info">
+                    In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
+                </p>
+            </div>
+        </article>
+
+        <article class="form">
+            <div class="container">
+                <p>
+                    <form action="post">
+                        <p>
+                            <label for="email"></label>
+                            <input type="email" name="email" id="email">
                         </p>
-                    </p>
-                    <blockquote>
-                        <q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</q>
-                    </blockquote>
-                    <small>
-                      December 24, 2018
-                    </small>
-                </li>
-            </ul>
-        </section>
+                        <p>
+                            <button type="submit" class="subscribe">Subscribe now</button>
+                        </p>
+                    </form>
+                </p>
+            </div>
+        </article>
 
-        <section class="want-to-stay">
-            <header>
-                <h3 class="want-to-stay__heading">
-
-                </h3>
-                <h2>
-                    Newsletter subscribe
-                </h2>
-            </header>
-            <p class="want-to-stay__info">
-                In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing information about game. We don’t spam.
-            </p>
-        </section>
-
-        <section class="form">
-            <p>
-                <form action="post">
-                    <p>
-                        <label for="email"></label>
-                        <input type="email" name="email" id="email">
-                    </p>
-                    <p>
-                        <button type="submit" class="subscribe">Subscribe now</button>
-                    </p>
-                </form>
-            </p>
-        </section>
-
-        <section class="section-navigation">
-            <header class="navigation_heading">
-                <a href="#">
-                    <span>game logo</span>
-                    <img src="" alt="">
-                </a>
-            </header>
-            <nav>
-                <ul class="navigation_lists">
-                    <li class="navigation_list">
-                        <a href="#/main">main</a>
-                    </li>
-                    <li class="navigation_list">
-                        <a href="#/about">About</a>
-                    </li>
-                    <li class="navigation_list">
-                        <a href="#/game_feature">Game feature</a>
-                    </li>
-                    <li class="navigation_list">
-                        <a href="#/system_requirements"> System requirements</a>
-                    </li>
-                    <li>
-                        <a href="#/quotes">quotes</a>
-                    </li>
-                </ul>
-                <ul class="list_icons">
-                    <li>
-                        <a href="/facebook">
-                            <span>Facebook</span>
-                            <img src="./img/facebook.svg" alt="">
-                        </a>
-                    </li>
-                    <li><a href="/twitter"><span>Twitter</span></a></li>
-                    <li><a href="/youtube"><span>Youtube</span></a></li>
-                    <li><a href="/video"><span>Video</span></a></li>
-                </ul>
-            </nav>
-        </section>
+        <article class="article-navigation">
+            <div class="container">
+                <header class="navigation_heading">
+                    <a href="#">
+                        <span>game logo</span>
+                        <img src="" alt="">
+                    </a>
+                </header>
+                <nav>
+                    <ul class="navigation_lists">
+                        <li class="navigation_list">
+                            <a href="#/main">main</a>
+                        </li>
+                        <li class="navigation_list">
+                            <a href="#/about">About</a>
+                        </li>
+                        <li class="navigation_list">
+                            <a href="#/game_feature">Game feature</a>
+                        </li>
+                        <li class="navigation_list">
+                            <a href="#/system_requirements"> System requirements</a>
+                        </li>
+                        <li>
+                            <a href="#/quotes">quotes</a>
+                        </li>
+                    </ul>
+                    <ul class="list_icons">
+                        <li>
+                            <a href="/facebook">
+                                <span>Facebook</span>
+                                <img src="./img/facebook.svg" alt="">
+                            </a>
+                        </li>
+                        <li><a href="/twitter"><span>Twitter</span></a></li>
+                        <li><a href="/youtube"><span>Youtube</span></a></li>
+                        <li><a href="/video"><span>Video</span></a></li>
+                    </ul>
+                </nav>
+            </div>
+        </article>
     </main>
 
     <footer class="body-footer">
-        <p>&copy; 2018 Outpost Games, Inc. All Rights Reserved</p>
-        <ul class="policy">
-            <li>Privacy policy</li>
-            <li>Terms of services</li>
-            <li>code of conduct</li>
-        </ul>
+        <div class="container">
+            <p>&copy; 2018 Outpost Games, Inc. All Rights Reserved</p>
+            <ul class="policy">
+                <li>Privacy policy</li>
+                <li>Terms of services</li>
+                <li>code of conduct</li>
+            </ul>
+        </div>
     </footer>
 </body>
 
