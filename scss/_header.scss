@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 500px;
 }
 
 .header {
@@ -21,14 +22,12 @@
 
 .masthead {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vw * 571 / 320);
     background-image: image('masthead-bg-resised.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     margin: 0;
-    padding-top: 400px;
-    padding-bottom: 400px;
 }
 
 ;
