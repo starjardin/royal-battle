@@ -46,9 +46,59 @@
   font-style: italic;
   src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
 
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: normal;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: normal;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 400;
+  font-style: italic;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "OpenSans";
+  font-weight: 700;
+  font-style: italic;
+  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: normal;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 400;
+  font-style: italic;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
+@font-face {
+  font-family: "BebasNeue";
+  font-weight: 700;
+  font-style: italic;
+  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
+
 body {
   font-family: "OpenSans";
-  text-align: center; }
+  text-align: center;
+  color: #ffffff;
+  background-color: #111111; }
 
 h1,
 h2,
@@ -64,64 +114,26 @@ span {
   margin: auto;
   max-width: 500px; }
 
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 400;
-  font-style: normal;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 700;
-  font-style: normal;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 400;
-  font-style: italic;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "OpenSans";
-  font-weight: 700;
-  font-style: italic;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "BebasNeue";
-  font-weight: 400;
-  font-style: normal;
-  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "BebasNeue";
-  font-weight: 700;
-  font-style: normal;
-  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "BebasNeue";
-  font-weight: 400;
-  font-style: italic;
-  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
-
-@font-face {
-  font-family: "BebasNeue";
-  font-weight: 700;
-  font-style: italic;
-  src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
-
 .header-navigation {
   max-width: 455px; }
+
+.game-logo {
+  display: block;
+  height: 32px;
+  width: 32px; }
 
 .header-navigation,
 .navigation-option {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 500px; }
 
-.header {
+.navigation-option {
+  width: 200px;
+  align-items: center; }
+
+.nav-container {
   position: absolute;
   top: 50px;
   margin: 0;
@@ -131,14 +143,48 @@ span {
 
 .masthead {
   width: 100vw;
-  height: 100vh;
+  height: calc(100vw * 571 / 320);
   background-image: url("../img/masthead-bg-resised.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin: 0;
-  padding-top: 400px;
-  padding-bottom: 400px; }
+  margin: 0; }
+
+.masthead-wrapper {
+  position: relative;
+  margin: auto;
+  height: calc(100vw * 571 / 320); }
+
+.masthead-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff; }
+
+.mast_heading,
+.mast_head_paragraph {
+  text-transform: uppercase;
+  font-weight: 700;
+  width: 100vw;
+  font-size: 33px; }
+
+.mast_heading {
+  padding-bottom: 14px; }
+
+.mast_head_paragraph {
+  font-size: 18px;
+  line-height: 18px;
+  padding-bottom: 20px; }
+
+.btn.buy {
+  padding-top: 11px;
+  padding-bottom: 16px;
+  padding-inline-start: 6px;
+  padding-inline-end: 6px;
+  background-color: #F3AF34;
+  border-radius: 5px;
+  border: none; }
 
 .menu {
   display: block;
@@ -146,6 +192,11 @@ span {
   background-repeat: no-repeat;
   width: 24px;
   height: 18px; }
+
+.menu::before {
+  content: "";
+  display: block;
+  border-left: gray solid 2px; }
 
 .menu > span {
   visibility: hidden; }
