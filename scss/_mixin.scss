@@ -2,4 +2,14 @@
     margin: 0;
     padding: 0;
     list-style: $list-style;
+};
+
+@mixin font-family_babasNeue {
+  font-family: $font-family-bebasNeue;
+};
+
+@mixin font-family_openSans {
+  font-family: $font-family-openSans;
+  font-weight: 400;
+  font-style: normal;
 }
