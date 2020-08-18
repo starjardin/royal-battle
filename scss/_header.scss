@@ -84,7 +84,7 @@
 
 .menu {
     display: block;
-    background-image: url("../img/menu-icon.svg");
+    background-image: image("menu-icon.svg");
     background-repeat: no-repeat;
     width: 24px;
     height: 18px;
@@ -108,4 +108,12 @@
 [for="lang_dropdown"] {
     visibility: hidden;
     display: none;
+}
+
+
+@media (min-width: 720px) {
+  .masthead {
+    background-image: image("bg-header-wide.jpg");
+    background-position: center center;
+  }
 }
