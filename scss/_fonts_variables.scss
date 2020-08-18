@@ -1,6 +1,6 @@
 $fonts: ( // you can insert all of your fonts here
 // Key key name can be repeated but the value must change.
-(family: "OpenSans", weight: 400, style: normal, filename: "OpenSans"), (family: "OpenSans", weight: 700, style: normal, filename: "OpenSans"), (family: "OpenSans", weight: 400, style: italic, filename: "OpenSans"), (family: "OpenSans", weight: 700, style: italic, filename: "OpenSans"), (family: "BebasNeue", weight: 400, style: normal, filename: "BebasNeue"), (family: "BebasNeue", weight: 700, style: normal, filename: "BebasNeue"), (family: "BebasNeue", weight: 400, style: italic, filename: "BebasNeue"), (family: "BebasNeue", weight: 700, style: italic, filename: "BebasNeue"));
+(family: "Open Sans", weight: 400, style: normal, filename: "Open Sans"), (family: "Open Sans", weight: 700, style: normal, filename: "Open Sans"), (family: "Open Sans", weight: 400, style: italic, filename: "Open Sans"), (family: "Open Sans", weight: 700, style: italic, filename: "Open Sans"), (family: "BebasNeue", weight: 400, style: normal, filename: "BebasNeue"), (family: "BebasNeue", weight: 700, style: normal, filename: "BebasNeue"), (family: "BebasNeue", weight: 400, style: italic, filename: "BebasNeue"), (family: "BebasNeue", weight: 700, style: italic, filename: "BebasNeue"));
 // Looping through of an array objects
 @each $font in ($fonts) {
     @font-face {
@@ -8,11 +8,11 @@ $fonts: ( // you can insert all of your fonts here
         font-weight: map-get($font, weight);
         font-style: map-get($font, style);
         src: local("#{map-get($font, filename)}-Regular"),
-        local("#{map-get($font, filename)} Regular"),
-        local("#{map-get($font, filename)}-Bold"),
-        local("#{map-get($font, filename)} Bold"),
-        url('../fonts/#{map-get($font, filename)}-Italic.woff') format(woff),
-        url('../fonts/#{map-get($font, filename)}-Regular.woff2') format(woff2);
+             local("#{map-get($font, filename)} Regular"),
+             local("#{map-get($font, filename)}-Bold"),
+             local("#{map-get($font, filename)} Bold"),
+             url('../fonts/#{map-get($font, filename)}-Italic.woff') format(woff),
+             url('../fonts/#{map-get($font, filename)}-Regular.woff2') format(woff2);
     }
     ;
 }
