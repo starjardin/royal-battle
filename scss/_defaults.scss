@@ -1,7 +1,7 @@
 @import "variables";
 @import "fonts";
 body {
-    font-family: "Open Sans";
+    @include font-family_openSans;
     font-weight: 400;
     text-align: center;
     color: #ffffff;
