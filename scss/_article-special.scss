@@ -1,0 +1,46 @@
+@import "variables";
+
+.article_special .container {
+  background-image: 
+                    url(../img/bg-special.png);
+  background-repeat: no-repeat;
+  background-position: 0 -16px;
+  background-size: contain;
+}
+
+.article_special {
+  padding-top: 90px;
+}
+
+.special_container {
+  text-align: start;
+  padding-bottom: 100px;
+  padding-left: 100px;
+}
+
+.special {
+  @include font-family_babasNeue;
+  @include subheading-spacing;
+}
+
+.features {
+  @include font-family_babasNeue;
+  @include heading-spacing;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.process {
+  @include font-family_babasNeue;
+  color: $secondary_color;
+  @include prossess-text;
+}
+
+.process_info {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.process:nth-last-child(1) {
+  padding-top: 40px;
+}
