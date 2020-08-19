@@ -1,0 +1,19 @@
+@import "variables";
+
+.article_availability {
+  text-align: start;  
+}
+
+.def_lists {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+}
+
+.def_title {
+
+}
+
+.def_details {
+  margin: 0;
+  padding: 0;
+}
