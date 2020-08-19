@@ -1,0 +1,33 @@
+@import "variables";
+
+.image_container ul {
+  text-align: start;
+  position: relative;
+  padding-top: calc(100% * 388/343);
+  list-style: none;
+}
+
+.sos_image1 {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: calc(90% * 388/343);
+}
+.sos_image2 {
+  position: absolute;
+  z-index: 2;
+  top: calc(90% * 20/343);
+  left: calc(90% * 20/343);
+  width: 90%;
+  height: calc((90% * 388/343) - 9%);
+}
+.sos_image3 {
+  position: absolute;
+  z-index: 1;
+  top: calc(90% * 40/343);
+  left: calc(90% * 40/343);
+  width: 90%;
+  height: calc((90% * 388/343) - 18%);
+}
