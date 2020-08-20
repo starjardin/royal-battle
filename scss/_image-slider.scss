@@ -3,31 +3,38 @@
 .image_container ul {
   text-align: start;
   position: relative;
-  padding-top: calc(100% * 388/343);
+  padding-top: calc(100% * 273/249);
   list-style: none;
 }
 
-.sos_image1 {
+.image_container ul li {
   position: absolute;
+}
+
+.image_container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+.sos_image1 {
   z-index: 3;
   top: 0;
   left: 0;
-  width: 90%;
-  height: calc(90% * 388/343);
+  right: calc(100% * 24 / 249);
 }
 .sos_image2 {
-  position: absolute;
   z-index: 2;
-  top: calc(90% * 20/343);
-  left: calc(90% * 20/343);
-  width: 90%;
-  height: calc((90% * 388/343) - 9%);
+  top: 58%;
+  left: 0;
+  right: calc(100% * 12 / 249);
+  transform: translateY(-50%) scale(calc(234 / 273));
+  transform-origin: 100% 0%;
 }
 .sos_image3 {
-  position: absolute;
+  top: 59%;
+  left: 0;
   z-index: 1;
-  top: calc(90% * 40/343);
-  left: calc(90% * 40/343);
-  width: 90%;
-  height: calc((90% * 388/343) - 18%);
+  right: 0;
+  transform: translateY(-50%) scale(calc(229 / 273));
+  transform-origin: 100% 0%;
 }
