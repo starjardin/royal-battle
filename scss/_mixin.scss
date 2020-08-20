@@ -31,3 +31,15 @@
   font-size: 21px;
   line-height: 21px;
 }
+
+@mixin background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+@mixin navigation-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
