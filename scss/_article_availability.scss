@@ -4,13 +4,24 @@
   text-align: start;  
 }
 
+.availability__subheading {
+  @include heading-spacing;
+  text-transform: uppercase;
+}
+
+.availability__subheadquestion,
+.def_title {
+  @include subheading-spacing;
+  text-transform: uppercase;
+}
+
 .def_lists {
   display: grid;
   grid-template-columns: repeat(2,1fr);
 }
 
 .def_title {
-
+  color: $secondary-color;
 }
 
 .def_details {
