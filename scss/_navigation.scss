@@ -1,0 +1,18 @@
+@import "variables";
+
+.submit {
+    transform: translate(-7830%);
+};
+
+.main-navigtion {
+  transform: translateY(-9999px);
+}
+
+[name="menu"] {
+  background-image: image("menu-icon.svg");
+  background-repeat: no-repeat;
+}
+
+[for="menu"] {
+  transform: translateY(-9999px);
+}
