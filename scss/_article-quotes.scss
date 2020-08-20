@@ -1,1 +1,60 @@
 @import "variables";
+
+.article_quotes {
+  text-align: start;
+  padding-top: 36px;
+  padding-bottom: 80px;
+}
+
+.article_quotes-subheading {
+  @include subheading-spacing;
+  text-transform: uppercase;
+}
+
+.article_quotes-heading {
+  @include heading-spacing;
+  text-transform: uppercase;
+}
+
+.quotes_info {
+  @include font-family_openSans;
+  text-align: justify;
+  font-style: normal;
+  font-style: 14px;
+  line-height: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.quotes_container {
+  @include navigation-flex;
+  align-items: center;
+}
+
+.profile a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0px $secondary-color;
+}
+
+.profile_info a {
+  @include font-family_babasNeue;
+  @include prossess-text;
+  color: $secondary-color;
+  text-decoration: none;
+}
+
+blockquote span {
+  visibility: hidden;
+}
+
+.icon-twitter {
+  display: block;
+  width: 18px;
+  height: 14px;
+  background-size: contain;
+  @include background;
+  background-image: url(../img/twitter.svg);
+}
