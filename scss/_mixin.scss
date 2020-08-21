@@ -43,3 +43,13 @@
   flex-direction: row;
   justify-content: space-between;
 }
+
+@mixin button {
+  font-weight: bold;
+  line-height: 18px;
+  background-color: $secondary-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+}
