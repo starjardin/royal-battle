@@ -11,10 +11,8 @@
 
 .header-navigation,
 .navigation-option {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 500px;
+  @include navigation-flex;
+  max-width: 500px;
 }
 
 .navigation-option {
@@ -22,23 +20,22 @@
   align-items: center;
 }
 
-.nav-container {
-    position: absolute;
-    top: 50px;
-    margin: 0;
-    padding: 0;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
+[type="checkbox"] {
+  background-image: image("menu-icon.svg");
+}
+
+.header {
+  position: absolute;
 }
 
 .masthead {
-    width: 100vw;
-    height: calc(100vw * 571 / 320);
-    background-image: image('masthead-bg-resised.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin: 0;
+  width: 100vw;
+  height: calc(100vw * 571 / 320);
+  background-image: image('masthead-bg-resised.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
 };
 
 .masthead-wrapper {
@@ -73,43 +70,10 @@
 }
 
 .btn.buy {
-  padding-top: 11px;
-  padding-bottom: 16px;
+  @include button;
   padding-inline-start: 6px;
   padding-inline-end: 6px;
-  background-color: #F3AF34;
-  border-radius: 5px;
-  border: none;
 };
-
-.menu {
-    display: block;
-    background-image: image("menu-icon.svg");
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 18px;
-}
-
-.menu::before {
-  content: "";
-  display: block;
-  // padding-left: 20px;
-  border-left: gray solid 2px;
-}
-
-.menu > span {
-    visibility: hidden;
-};
-
-.submit {
-    visibility: hidden;
-};
-
-[for="lang_dropdown"] {
-    visibility: hidden;
-    display: none;
-}
-
 
 @media (min-width: 720px) {
   .masthead {
