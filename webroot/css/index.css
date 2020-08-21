@@ -1,26 +1,26 @@
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: italic;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 700;
   font-style: italic;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
   font-family: "BebasNeue";
@@ -47,28 +47,28 @@
   src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: normal;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 700;
   font-style: normal;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 400;
   font-style: italic;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
   font-weight: 700;
   font-style: italic;
-  src: local("OpenSans-Regular"), local("OpenSans Regular"), local("OpenSans-Bold"), local("OpenSans Bold"), url("../fonts/OpenSans-Italic.woff") format(woff), url("../fonts/OpenSans-Regular.woff2") format(woff2); }
+  src: local("Open Sans-Regular"), local("Open Sans Regular"), local("Open Sans-Bold"), local("Open Sans Bold"), url("../fonts/Open Sans-Italic.woff") format(woff), url("../fonts/Open Sans-Regular.woff2") format(woff2); }
 
 @font-face {
   font-family: "BebasNeue";
@@ -95,10 +95,14 @@
   src: local("BebasNeue-Regular"), local("BebasNeue Regular"), local("BebasNeue-Bold"), local("BebasNeue Bold"), url("../fonts/BebasNeue-Italic.woff") format(woff), url("../fonts/BebasNeue-Regular.woff2") format(woff2); }
 
 body {
-  font-family: "OpenSans";
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  font-weight: 400;
   text-align: center;
   color: #ffffff;
-  background-color: #111111; }
+  background-color: #111111;
+  padding: 0; }
 
 h1,
 h2,
@@ -114,6 +118,9 @@ span {
   margin: auto;
   max-width: 500px; }
 
+p {
+  text-align: justify; }
+
 .header-navigation {
   max-width: 455px; }
 
@@ -127,19 +134,17 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 500px; }
+  max-width: 500px; }
 
 .navigation-option {
   width: 200px;
   align-items: center; }
 
-.nav-container {
-  position: absolute;
-  top: 50px;
-  margin: 0;
-  padding: 0;
-  margin-inline-start: auto;
-  margin-inline-end: auto; }
+[type="checkbox"] {
+  background-image: url("../img/menu-icon.svg"); }
+
+.header {
+  position: absolute; }
 
 .masthead {
   width: 100vw;
@@ -178,36 +183,290 @@ span {
   padding-bottom: 20px; }
 
 .btn.buy {
-  padding-top: 11px;
-  padding-bottom: 16px;
-  padding-inline-start: 6px;
-  padding-inline-end: 6px;
-  background-color: #F3AF34;
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #FFB548;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
   border-radius: 5px;
-  border: none; }
+  padding-inline-start: 6px;
+  padding-inline-end: 6px; }
 
-.menu {
-  display: block;
-  background-image: url("../img/menu-icon.svg");
-  background-repeat: no-repeat;
-  width: 24px;
-  height: 18px; }
-
-.menu::before {
-  content: "";
-  display: block;
-  border-left: gray solid 2px; }
-
-.menu > span {
-  visibility: hidden; }
+@media (min-width: 720px) {
+  .masthead {
+    background-image: url("../img/bg-header-wide.jpg");
+    background-position: center center; } }
 
 .submit {
-  visibility: hidden; }
+  transform: translate(-7830%); }
 
-[for="lang_dropdown"] {
-  visibility: hidden;
-  display: none; }
+.main-navigtion {
+  transform: translateY(-9999px); }
+
+[name="menu"] {
+  background-image: url("../img/menu-icon.svg");
+  background-repeat: no-repeat; }
+
+[for="menu"] {
+  transform: translateY(-9999px); }
+
+.article_sos {
+  text-align: start; }
+
+.sos_heading,
+.sos_subheading {
+  font-family: "Bebas Neue"; }
+
+.sos_heading {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding-top: 47px; }
+
+.sos_subheading {
+  letter-spacing: 3px;
+  font-size: 33px;
+  line-height: 33px;
+  padding-top: 8px;
+  padding-bottom: 38px;
+  border-bottom: solid 2px #ffffff; }
+
+.sos_info {
+  margin-top: 30px; }
+
+.sos_info.decisions {
+  margin-top: 20px;
+  margin-bottom: 40px; }
 
 img {
   width: 100%;
   height: 100%; }
+
+.image_container ul {
+  text-align: start;
+  position: relative;
+  padding-top: calc(100% * 273/249);
+  list-style: none; }
+
+.image_container ul li {
+  position: absolute; }
+
+.image_container img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%; }
+
+.sos_image1 {
+  z-index: 3;
+  top: 0;
+  left: 0;
+  right: calc(100% * 24 / 249); }
+
+.sos_image2 {
+  z-index: 2;
+  top: 58%;
+  left: 0;
+  right: calc(100% * 12 / 249);
+  transform: translateY(-50%) scale(calc(234 / 273));
+  transform-origin: 100% 0%; }
+
+.sos_image3 {
+  top: 59%;
+  left: 0;
+  z-index: 1;
+  right: 0;
+  transform: translateY(-50%) scale(calc(229 / 273));
+  transform-origin: 100% 0%; }
+
+.article_special .container {
+  background-image: url(../img/bg-special.png);
+  background-repeat: no-repeat;
+  background-position: 0 -16px;
+  background-size: contain; }
+
+.article_special {
+  padding-top: 90px; }
+
+.special_container {
+  text-align: start;
+  padding-bottom: 100px;
+  padding-left: 100px; }
+
+.special {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-size: 18px; }
+
+.features {
+  font-family: "Bebas Neue";
+  letter-spacing: 3px;
+  font-size: 33px;
+  line-height: 33px;
+  padding-top: 10px;
+  padding-bottom: 30px; }
+
+.process {
+  font-family: "Bebas Neue";
+  color: #FFB548;
+  letter-spacing: 2px;
+  font-size: 21px;
+  line-height: 21px; }
+
+.process_info {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+
+.process:nth-last-child(1) {
+  padding-top: 40px; }
+
+.article_availability {
+  text-align: start; }
+
+.availability__subheading {
+  letter-spacing: 3px;
+  font-size: 33px;
+  line-height: 33px;
+  text-transform: uppercase; }
+
+.availability__subheadquestion,
+.def_title {
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.def_lists {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); }
+
+.def_title {
+  color: #FFB548; }
+
+.def_list {
+  border: 0.504234px solid #979797;
+  padding: 10px; }
+
+.def_details {
+  margin: 0;
+  padding: 0; }
+
+.article_quotes {
+  text-align: start;
+  padding-top: 36px;
+  padding-bottom: 80px; }
+
+blockquote span {
+  visibility: hidden; }
+
+blockquote {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20;
+  margin-bottom: 20;
+  margin-right: 0;
+  margin-left: 0; }
+
+.profile_info {
+  padding-top: 13px;
+  padding-bottom: 13px; }
+
+.article_quotes-subheading {
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-size: 18px;
+  text-transform: uppercase; }
+
+.article_quotes-heading {
+  letter-spacing: 3px;
+  font-size: 33px;
+  line-height: 33px;
+  text-transform: uppercase; }
+
+.quotes_info {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  text-align: justify;
+  font-style: normal;
+  font-style: 14px;
+  line-height: 16px;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+
+.quotes_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+
+.profile a {
+  display: block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  box-shadow: 5px 5px 0px #FFB548; }
+
+.profile_info a {
+  font-family: "Bebas Neue";
+  letter-spacing: 2px;
+  font-size: 21px;
+  line-height: 21px;
+  color: #FFB548;
+  text-decoration: none; }
+
+.profile_info .name {
+  display: block;
+  visibility: visible; }
+
+.icon-twitter {
+  display: block;
+  width: 18px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url(../img/twitter.svg); }
+
+.read_more {
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #FFB548;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  padding-left: 10px;
+  padding-right: 22px;
+  margin-left: calc(100% * 40 / 290);
+  margin-inline-end: calc(100% * 35 / 290); }
+
+.newsletter .container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/bg-newsletter.png");
+  height: calc(100vw * 532 / 320);
+  background-position-x: -50vw;
+  padding-right: 1rem; }
+
+.form-contanier .subscribe {
+  font-weight: bold;
+  line-height: 18px;
+  background-color: #FFB548;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: none;
+  border-radius: 5px;
+  display: block;
+  width: 100%; }
+
+.form-contanier input[type="email"] {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #979797; }
