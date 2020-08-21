@@ -6,6 +6,25 @@
   padding-bottom: 80px;
 }
 
+blockquote span {
+  visibility: hidden;
+}
+
+blockquote {
+  background-color: rgba(255, 255, 255, 0.08);
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20;
+  margin-bottom: 20;
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.profile_info {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
+
 .article_quotes-subheading {
   @include subheading-spacing;
   text-transform: uppercase;
@@ -46,8 +65,9 @@
   text-decoration: none;
 }
 
-blockquote span {
-  visibility: hidden;
+.profile_info .name {
+  display: block;
+  visibility: visible;
 }
 
 .icon-twitter {
@@ -57,4 +77,12 @@ blockquote span {
   background-size: contain;
   @include background;
   background-image: url(../img/twitter.svg);
+}
+
+.read_more {
+  @include button;
+  padding-left: 10px;
+  padding-right: 22px;
+  margin-left: calc(100% * 40 / 290);
+  margin-inline-end: calc(100% * 35 / 290);
 }
