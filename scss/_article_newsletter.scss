@@ -1,0 +1,47 @@
+@import "variables";
+
+.newsletter-container {
+  @include background;
+  background-image: image("newsletter-sm-bg.png");
+  // background-position: left calc(100% * (320 - 105) / 320);
+  background-size: contain;
+  background-position: left;
+  padding-right: 1rem;
+  padding-left: calc(100vw * 115 / 320);
+}
+
+.form-contanier .subscribe {
+  @include button;
+  display: block;
+  width: 100%;
+}
+
+.form-contanier input[type="email"] {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #979797;
+}
+
+[for="email"] {
+  max-width: max-content;
+}
+
+.newsletter__heading,
+.newsletter__subheading  {
+  text-align: start;
+  @include font-family_babasNeue;
+}
+
+.newsletter__heading {
+  @include heading-spacing;
+  padding-top: 26px;
+}
+
+.newsletter__subheading {
+  @include subheading-spacing;
+}
+
+.newsletter__info {
+  @include font-family_openSans;
+}
+
