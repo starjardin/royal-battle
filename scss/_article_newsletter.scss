@@ -1,5 +1,9 @@
 @import "variables";
 
+.newsletter {
+  padding-bottom: 61px;
+}
+
 .newsletter-container {
   @include background;
   background-image: image("newsletter-sm-bg.png");
