@@ -211,6 +211,15 @@ p {
 [for="menu"] {
   transform: translateY(-9999px); }
 
+.navigation_lists {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
 .article_sos {
   text-align: start; }
 
@@ -444,14 +453,18 @@ blockquote {
   margin-left: calc(100% * 40 / 290);
   margin-inline-end: calc(100% * 35 / 290); }
 
-.newsletter .container {
+.newsletter {
+  padding-bottom: 61px; }
+
+.newsletter-container {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-image: url("../img/bg-newsletter.png");
-  height: calc(100vw * 532 / 320);
-  background-position-x: -50vw;
-  padding-right: 1rem; }
+  background-image: url("../img/newsletter-sm-bg.png");
+  background-size: contain;
+  background-position: left;
+  padding-right: 1rem;
+  padding-left: calc(100vw * 115 / 320); }
 
 .form-contanier .subscribe {
   font-weight: bold;
@@ -467,6 +480,28 @@ blockquote {
 .form-contanier input[type="email"] {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.08);
-  padding-top: 2rem;
-  padding-bottom: 2rem;
   color: #979797; }
+
+[for="email"] {
+  max-width: max-content; }
+
+.newsletter__heading,
+.newsletter__subheading {
+  text-align: start;
+  font-family: "Bebas Neue"; }
+
+.newsletter__heading {
+  letter-spacing: 3px;
+  font-size: 33px;
+  line-height: 33px;
+  padding-top: 26px; }
+
+.newsletter__subheading {
+  letter-spacing: 2px;
+  line-height: 18px;
+  font-size: 18px; }
+
+.newsletter__info {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal; }
