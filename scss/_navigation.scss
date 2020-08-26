@@ -19,11 +19,100 @@
 
 //Here is the navigation article
 
+.heading-logo {
+  width: 50px;
+  height: 50px;
+}
+
 .navigation_lists {
   @include navigation-flex;
   @include reset-ul;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: calc(50px - 15px);
+  padding-bottom: calc(50px - 15px);
 }
 
 .navigation_list {
-  
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+
+.navigation_list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $primary_color;
+}
+
+.navigation_list.main{
+  flex-basis: 33%;
+}
+
+.navigation_list.about {
+  flex-basis: 33%;
+}
+
+.navigation_list.game {
+  flex-basis: 33%;
+}
+
+.navigation_list.system-requierments {
+  flex-basis: 50%;
+}
+
+.navigation_list.quotes {
+ flex-basis: 50%; 
+}
+
+
+.list_icons {
+  @include navigation-flex;
+}
+
+.navigation-icons > span {
+  transform: translate(-99999px);
+  visibility: hidden;
+}
+
+.list_icons > li {
+  @include reset-ul;
+  width: 3rem;
+  height: 3rem;
+}
+
+.list_icons > .navigation_list.youtube {
+  background-image: image("cursor.svg");
+  @include background;
+  background-size: 20px 20px;
+}
+
+.navigation-icons {
+  @include background;
+  background-size: contain;
+  display: block;
+  width: 21px;
+  height: 18px;
+}
+
+[href="/facebook"] {
+  background-image: image("facebook.svg");
+}
+
+[href="/twitter-white"] {
+  background-image: image("twitter-white.svg");
+}
+
+[href="/youtube"] {
+  background-image: image("youtube.svg");
+}
+
+// .navigation_list.youtube {
+//   background-size: contain;
+//   background-image: image("youtube.svg");
+// }
+
+[href="/instagram"] {
+  background-image: image("twitch.svg");
 }
