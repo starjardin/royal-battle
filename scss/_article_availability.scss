@@ -1,23 +1,37 @@
 @import "variables";
 
 .article_availability {
-  text-align: start;  
+  text-align: start;
+  @include background;
+  background-size: 100% 100%;
+  padding-bottom: calc(100% * 354 / 720);
+  background-position-y: bottom;
+  background-image: url("../img/bg4-image.png");
 }
 
 .availability__subheading {
   @include heading-spacing;
   text-transform: uppercase;
+  padding-bottom: 45px;
 }
 
 .availability__subheadquestion,
 .def_title {
   @include subheading-spacing;
   text-transform: uppercase;
+  padding-bottom: 15px;
 }
 
 .def_lists {
   display: grid;
   grid-template-columns: repeat(2,1fr);
+}
+
+.graphics.def_list {
+  grid-row-start: 3;
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 .def_title {
