@@ -9,9 +9,9 @@
   background-image: image("newsletter-sm-bg.png");
   // background-position: left calc(100% * (320 - 105) / 320);
   background-size: contain;
-  background-position: left;
+  background-position: left center;
   padding-right: 1rem;
-  padding-left: calc(100vw * 115 / 320);
+  padding-left: 115px;
 }
 
 .form-contanier .subscribe {
