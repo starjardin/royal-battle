@@ -114,10 +114,6 @@ p,
 span {
   margin: 0; }
 
-.container {
-  margin: auto;
-  max-width: 500px; }
-
 p {
   text-align: justify; }
 
@@ -211,6 +207,10 @@ p {
 [for="menu"] {
   transform: translateY(-9999px); }
 
+.heading-logo {
+  width: 50px;
+  height: 50px; }
+
 .navigation_lists {
   display: flex;
   flex-direction: row;
@@ -218,7 +218,81 @@ p {
   margin: 0;
   padding: 0;
   list-style: none;
-  text-decoration: none; }
+  text-decoration: none;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding-top: calc(50px - 15px);
+  padding-bottom: calc(50px - 15px); }
+
+.navigation_list {
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+.navigation_list a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff; }
+
+.navigation_list.main {
+  flex-basis: 33%; }
+
+.navigation_list.about {
+  flex-basis: 33%; }
+
+.navigation_list.game {
+  flex-basis: 33%; }
+
+.navigation_list.system-requierments {
+  flex-basis: 50%; }
+
+.navigation_list.quotes {
+  flex-basis: 50%; }
+
+.list_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.navigation-icons > span {
+  transform: translate(-99999px);
+  visibility: hidden; }
+
+.list_icons > li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem; }
+
+.list_icons > .navigation_list.youtube {
+  background-image: url("../img/cursor.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: 20px 20px; }
+
+.navigation-icons {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: contain;
+  display: block;
+  width: 21px;
+  height: 18px; }
+
+[href="/facebook"] {
+  background-image: url("../img/facebook.svg"); }
+
+[href="/twitter-white"] {
+  background-image: url("../img/twitter-white.svg"); }
+
+[href="/youtube"] {
+  background-image: url("../img/youtube.svg"); }
+
+[href="/instagram"] {
+  background-image: url("../img/twitch.svg"); }
 
 .article_sos {
   text-align: start; }
@@ -289,7 +363,7 @@ img {
   transform-origin: 100% 0%; }
 
 .article_special .container {
-  background-image: url(../img/bg-special.png);
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 50%, black 100%), linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.3) 50%, rgba(0, 0, 0, 0.5) 75%, black 100%), url(../img/bg-special.png);
   background-repeat: no-repeat;
   background-position: 0 -16px;
   background-size: contain; }
@@ -331,24 +405,39 @@ img {
   padding-top: 40px; }
 
 .article_availability {
-  text-align: start; }
+  text-align: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding-bottom: calc(100% * 354 / 720);
+  background-position-y: bottom;
+  background-image: url("../img/bg4-image.png"); }
 
 .availability__subheading {
   letter-spacing: 3px;
   font-size: 33px;
   line-height: 33px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: 45px; }
 
 .availability__subheadquestion,
 .def_title {
   letter-spacing: 2px;
   line-height: 18px;
   font-size: 18px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  padding-bottom: 15px; }
 
 .def_lists {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
+
+.graphics.def_list {
+  grid-row-start: 3;
+  grid-row-start: 4;
+  grid-column-start: 1;
+  grid-column-end: 3; }
 
 .def_title {
   color: #FFB548; }
@@ -462,9 +551,9 @@ blockquote {
   background-position: center center;
   background-image: url("../img/newsletter-sm-bg.png");
   background-size: contain;
-  background-position: left;
+  background-position: left center;
   padding-right: 1rem;
-  padding-left: calc(100vw * 115 / 320); }
+  padding-left: 115px; }
 
 .form-contanier .subscribe {
   font-weight: bold;
