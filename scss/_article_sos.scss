@@ -1,9 +1,30 @@
-.sos_heading {
-  text-align: center;
-}
-.sos_subhading {
+.article_sos {
   text-align: start;
+}
+.sos_heading,
+.sos_subheading {
+  @include font-family_babasNeue;
+}
+
+.sos_heading {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  padding-top: 47px;
+}
+.sos_subheading {
+  letter-spacing: 3px;
+  font-size: 33px;
+  line-height: 33px;
+  padding-top: 8px;
+  padding-bottom: 38px;
+  border-bottom: solid 2px $primary_color;
 }
 .sos_info {
-  text-align: start;
+ margin-top: 30px;
+}
+
+.sos_info.decisions {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
