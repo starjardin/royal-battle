@@ -1,7 +1,7 @@
 @import "variables";
-.header-navigation {
-    max-width: 455px;
-}
+// .header-navigation {
+//     max-width: 455px;
+// }
 
 .game-logo {
   display: block;
@@ -20,8 +20,48 @@
   align-items: center;
 }
 
-[type="checkbox"] {
-  background-image: image("menu-icon.svg");
+[name="menu"] {
+  background-image: image("menu.svg");
+  background-color: rebeccapurple;
+  padding: 4rem;
+}
+
+.main-navigtion > ul {
+  @include reset-ul
+}
+
+.main-navigation-list {
+  list-style: $list-style;
+}
+
+.main-navigtion {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0,0,0,.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s;
+}
+
+body [type="checkbox"]:checked ~ .main-navigtion {
+  transform: translateX(0);
+}
+
+body [type="checkbox"]:checked ~ .main-navigtion label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0,0,0,.25);
 }
 
 .header {
@@ -36,11 +76,11 @@
   max-height: 960px;
 };
 
-.masthead-wrapper {
-  position: relative;
-  margin: auto;
-  height: 100%;
-}
+// .masthead-wrapper {
+//   position: relative;
+//   margin: auto;
+//   height: 100%;
+// }
 
 .masthead-container {
   position: absolute;
