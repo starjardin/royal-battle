@@ -5,6 +5,7 @@
   @include background;
   background-size: 100% 100%;
   padding-bottom: calc(100% * 354 / 720);
+  padding-top: calc(100% * 70 / 720);
   background-position-y: bottom;
   background-image: url("../img/bg4-image.png");
 }
@@ -39,7 +40,7 @@
 }
 
 .def_list {
-  border: 0.504234px solid #979797;
+  border: 0.504234px solid rgba(255, 255, 255, 0.5);
   padding: 10px;
 }
 
