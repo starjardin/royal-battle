@@ -1,0 +1,51 @@
+@import "variables";
+
+.game-logo {
+  @include background;
+  display: inline-flex;
+  background-image: image("logo.svg");
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+.game-logo > span {
+  visibility: hidden;
+}
+
+//Delete pading
+.policy-lists {
+  @include reset-ul;
+}
+//delete list style
+.policy-list > a {
+  text-decoration: $text-decoration;
+  color: $primary-color;
+  text-transform: $uppercase-text;
+  font-weight: $bold-text;
+  font-size: $font-size-12;
+  line-height: $line-height-34;
+};
+
+.terms-of-services::before {
+  content: "|";
+  display: inline-block;
+}
+
+.terms-of-services::after {
+  content: "|";
+  display: inline-block;
+}
+
+.copy-right {
+  font-size: $font-size-12;
+  line-height: $line-height-16;
+  opacity: $opacity-5;
+  display: inline-flex;
+    padding-top: 20px;
+  padding-bottom: 23px;
+}
+
+.policy {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
