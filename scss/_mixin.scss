@@ -16,21 +16,21 @@
 };
 
 @mixin subheading-spacing {
-  letter-spacing: 2px;
-  line-height: 18px;
-  font-size: 18px;
+  letter-spacing: $letter-spacing-2;
+  line-height: $line-height-18;
+  font-size: $font-size-18;
 }
 
 @mixin heading-spacing {
-  letter-spacing: 3px;
-  font-size: 33px;
-  line-height: 33px;
+  letter-spacing: $letter-spacing-3;
+  font-size: $font-size-33;
+  line-height: $line-height-33;
 }
 
 @mixin prossess-text {
-  letter-spacing: 2px;
-  font-size: 21px;
-  line-height: 21px;
+  letter-spacing: $letter-spacing-2;
+  font-size: $font-size-21;
+  line-height: $line-height-21;
 }
 
 @mixin background {
