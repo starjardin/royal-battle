@@ -4,10 +4,6 @@
     transform: translate(-7830%);
 };
 
-.main-navigtion {
-  transform: translateY(-9999px);
-}
-
 [name="menu"] {
   background-image: image("menu-icon.svg");
   background-repeat: no-repeat;
@@ -41,7 +37,7 @@
 
 .navigation_list a {
   text-decoration: none;
-  text-transform: uppercase;
+  text-transform: $uppercase-text;
   font-weight: 700;
   color: $primary_color;
 }
@@ -72,7 +68,6 @@
 }
 
 .navigation-icons > span {
-  transform: translate(-99999px);
   visibility: hidden;
 }
 
@@ -107,11 +102,6 @@
 [href="/youtube"] {
   background-image: image("youtube.svg");
 }
-
-// .navigation_list.youtube {
-//   background-size: contain;
-//   background-image: image("youtube.svg");
-// }
 
 [href="/instagram"] {
   background-image: image("twitch.svg");

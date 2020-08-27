@@ -3,11 +3,10 @@
 .article_availability {
   text-align: start;
   @include background;
-  background-size: 100% 100%;
   padding-bottom: calc(100% * 354 / 720);
   padding-top: calc(100% * 70 / 720);
   background-position-y: bottom;
-  background-image: url("../img/bg4-image.png");
+  background-image: image("big-bg-avalability.png");
 }
 
 .availability__subheading {
