@@ -1,5 +1,7 @@
 .article_sos {
   text-align: start;
+  @include background;
+  background-image: image("sos-big-bg.png");
 }
 .sos_heading,
 .sos_subheading {
