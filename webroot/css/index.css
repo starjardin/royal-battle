@@ -117,9 +117,6 @@ span {
 p {
   text-align: justify; }
 
-.header-navigation {
-  max-width: 455px; }
-
 .game-logo {
   display: block;
   height: 32px;
@@ -136,25 +133,58 @@ p {
   width: 200px;
   align-items: center; }
 
-[type="checkbox"] {
-  background-image: url("../img/menu-icon.svg"); }
+[name="menu"] {
+  background-image: url("../img/menu.svg");
+  background-color: rebeccapurple;
+  padding: 4rem; }
+
+.main-navigtion > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.main-navigation-list {
+  list-style: none; }
+
+.main-navigtion {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s; }
+
+body [type="checkbox"]:checked ~ .main-navigtion {
+  transform: translateX(0); }
+
+body [type="checkbox"]:checked ~ .main-navigtion label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.25); }
 
 .header {
   position: absolute; }
 
 .masthead {
-  width: 100vw;
-  height: calc(100vw * 571 / 320);
-  background-image: url("../img/masthead-bg-resised.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  margin: 0; }
-
-.masthead-wrapper {
-  position: relative;
-  margin: auto;
-  height: calc(100vw * 571 / 320); }
+  height: calc(100vw * 571 / 320);
+  background-image: url("../img/masthead-bg-resised.png");
+  margin: 0;
+  max-height: 960px; }
 
 .masthead-container {
   position: absolute;
@@ -167,13 +197,13 @@ p {
 .mast_head_paragraph {
   text-transform: uppercase;
   font-weight: 700;
-  width: 100vw;
   font-size: 33px; }
 
 .mast_heading {
   padding-bottom: 14px; }
 
 .mast_head_paragraph {
+  text-align: center;
   font-size: 18px;
   line-height: 18px;
   padding-bottom: 20px; }
@@ -191,21 +221,14 @@ p {
 
 @media (min-width: 720px) {
   .masthead {
-    background-image: url("../img/bg-header-wide.jpg");
-    background-position: center center; } }
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-size: 100% 100%;
+    background-image: url("../img/header-big-bg.png"); } }
 
 .submit {
   transform: translate(-7830%); }
-
-.main-navigtion {
-  transform: translateY(-9999px); }
-
-[name="menu"] {
-  background-image: url("../img/menu-icon.svg");
-  background-repeat: no-repeat; }
-
-[for="menu"] {
-  transform: translateY(-9999px); }
 
 .heading-logo {
   width: 50px;
@@ -255,7 +278,6 @@ p {
   justify-content: space-between; }
 
 .navigation-icons > span {
-  transform: translate(-99999px);
   visibility: hidden; }
 
 .list_icons > li {
@@ -295,7 +317,11 @@ p {
   background-image: url("../img/twitch.svg"); }
 
 .article_sos {
-  text-align: start; }
+  text-align: start;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-image: url("../img/sos-big-bg.png"); }
 
 .sos_heading,
 .sos_subheading {
@@ -409,10 +435,10 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-size: 100% 100%;
   padding-bottom: calc(100% * 354 / 720);
+  padding-top: calc(100% * 70 / 720);
   background-position-y: bottom;
-  background-image: url("../img/bg4-image.png"); }
+  background-image: url("../img/big-bg-avalability.png"); }
 
 .availability__subheading {
   letter-spacing: 3px;
@@ -443,7 +469,7 @@ img {
   color: #FFB548; }
 
 .def_list {
-  border: 0.504234px solid #979797;
+  border: 0.50423px solid rgba(255, 255, 255, 0.5);
   padding: 10px; }
 
 .def_details {
@@ -594,3 +620,49 @@ blockquote {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal; }
+
+.game-logo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: inline-flex;
+  background-image: url("../img/logo.svg");
+  width: 50px;
+  height: 50px;
+  text-align: center; }
+
+.game-logo > span {
+  visibility: hidden; }
+
+.policy-lists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none; }
+
+.policy-list > a {
+  text-decoration: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px; }
+
+.terms-of-services::before {
+  content: "|";
+  display: inline-block; }
+
+.terms-of-services::after {
+  content: "|";
+  display: inline-block; }
+
+.copy-right {
+  font-size: 12px;
+  line-height: 16px;
+  opacity: 0.5;
+  display: inline-flex;
+  padding-top: 20px;
+  padding-bottom: 23px; }
+
+.policy {
+  border-top: 1px solid rgba(255, 255, 255, 0.5); }
