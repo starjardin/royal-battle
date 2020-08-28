@@ -19,18 +19,21 @@
               </a>
             </h1>
             <div class="navigation-option">
-              <form action="." method="GET">
-                <label for="lang_dropdown">
-                  Language
-                </label>
-                <select name="lang" id="lang_dropdown">
-                  <option lang="en" value="en" label="Eng">
-                  <option lang="ru" value="ru" label="русский">
-                  <option lang="fr" value="fr" label="Français">
-                  <option lang="de" value="de" label="Deutsch">
-                </select>
-                <button type="submit" class="submit">Save</button>
-              </form>
+              <details>
+                <summary>Eng</summary>
+                <form action="." method="GET">
+                  <label for="lang_dropdown">
+                    Language
+                  </label>
+                  <select name="lang" id="lang_dropdown">
+                    <option lang="en" value="en" label="Eng">
+                    <option lang="ru" value="ru" label="русский">
+                    <opt class="process"ion lang="fr" value="fr" label="Français">
+                    <option lang="de" value="de" label="Deutsch">
+                  </select>
+                  <button type="submit" class="submit">Save</button>
+                </form>
+              </details>
               <input type="checkbox" name="menu" id="menu" class="menu">
               <nav class="main-navigtion">
                 <label for="menu">checkbox</label>
@@ -126,26 +129,27 @@
               <h2 class="special">What'so special</h2>
               <h3 class="features">Features</h3>
             </header>
-
-            <details>
-              <summary class="process">
-                survival at all costs
-              </summary>
-                <p class="process_info">
-                  You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue
-                  chopper.
-                </p>
-            </details>
-            <details class="process">
-              <summary> 
-               create allies and enemies
-              </summary>
-            </details>
-            <details class="process">
-              <summary> 
-                Impress the audiance
-              </summary>
-            </details>
+            <div class="details-container">
+              <details class="process">
+                <summary class="process-summury">
+                  survival at all costs
+                </summary>
+                  <p class="process_info">
+                    You have 30 minutes to find a relic, signal for extraction, and grab one of three spots on the rescue
+                    chopper.
+                  </p>
+              </details>
+              <details class="process">
+                <summary class="process-summury"> 
+                create allies and enemies
+                </summary>
+              </details>
+              <details class="process">
+                <summary class="process-summury"> 
+                  Impress the audiance
+                </summary>
+              </details>
+            </div>
           </div>
         </div>
       </article>
