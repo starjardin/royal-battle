@@ -12,11 +12,6 @@
     rgba(0, 0, 0, .3) 50%,
     rgba(0,0,0,.5) 75%,
     rgba(0, 0, 0, 1) 100%),
-    // linear-gradient(
-    // to top,
-    // rgba(0,0,0,.5) 0%,
-    // rgba(0, 0, 0, .7) 50%,
-    // rgba(0, 0, 0, 1) 100%),
   url(../img/bg-special.png);
   background-repeat: no-repeat;
   background-position: 0 -16px;
@@ -54,8 +49,4 @@
 .process_info {
   padding-top: 20px;
   padding-bottom: 30px;
-}
-
-.process:nth-last-child(1) {
-  padding-top: 40px;
-}
+};
