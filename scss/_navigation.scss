@@ -1,10 +1,10 @@
-@import "variables";
+// @import "variables";
 
 .submit {
     transform: translate(-7830%);
 };
 
-//Here is the navigation article
+// //Here is the navigation article
 
 .heading-logo {
   width: 50px;
@@ -23,6 +23,8 @@
 .navigation_list {
   padding-top: 15px;
   padding-bottom: 15px;
+  display: flex;
+  justify-content: flex-start;
 }
 
 
@@ -53,9 +55,11 @@
  flex-basis: 50%; 
 }
 
-
 .list_icons {
+  width: 100%;
   @include navigation-flex;
+  @include reset-ul;
+  justify-content: space-around;
 }
 
 .navigation-icons > span {
@@ -63,7 +67,6 @@
 }
 
 .list_icons > li {
-  @include reset-ul;
   width: 3rem;
   height: 3rem;
 }
