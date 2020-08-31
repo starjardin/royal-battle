@@ -1,6 +1,13 @@
 $fonts: ( // you can insert all of your fonts here
 // Key key name can be repeated but the value must change.
-(family: "Open Sans", weight: 400, style: normal, filename: "Open Sans"), (family: "Open Sans", weight: 700, style: normal, filename: "Open Sans"), (family: "Open Sans", weight: 400, style: italic, filename: "Open Sans"), (family: "Open Sans", weight: 700, style: italic, filename: "Open Sans"), (family: "BebasNeue", weight: 400, style: normal, filename: "BebasNeue"), (family: "BebasNeue", weight: 700, style: normal, filename: "BebasNeue"), (family: "BebasNeue", weight: 400, style: italic, filename: "BebasNeue"), (family: "BebasNeue", weight: 700, style: italic, filename: "BebasNeue"));
+(family: "Open Sans", weight: 400, style: normal, filename: "Open Sans"),
+ (family: "Open Sans", weight: 700, style: normal, filename: "Open Sans"),
+ (family: "Open Sans", weight: 400, style: italic, filename: "Open Sans"),
+ (family: "Open Sans", weight: 700, style: italic, filename: "Open Sans"),
+ (family: "BebasNeue", weight: 400, style: normal, filename: "BebasNeue"),
+ (family: "BebasNeue", weight: 700, style: normal, filename: "BebasNeue"),
+ (family: "BebasNeue", weight: 400, style: italic, filename: "BebasNeue"),
+ (family: "BebasNeue", weight: 700, style: italic, filename: "BebasNeue"));
 // Looping through of an array objects
 @each $font in ($fonts) {
     @font-face {
