@@ -43,6 +43,7 @@
   left: 0;
   bottom: 0;
   width: 250px;
+  height: 100vh;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
   transform: translateX(-110%);
   transition: transform 0.3s;
@@ -112,6 +113,22 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
   padding-inline-start: 6px;
   padding-inline-end: 6px;
 };
+
+[name="lang"] {
+  border: none;
+  color: $primary-color;
+  background-color: rgba(0, 0 , 0, 0);
+  text-transform: $uppercase-text;
+  padding: 0;
+}
+ 
+ option {
+   color: $secondary-color;
+ }
+
+[for="lang_dropdown"] {
+  visibility: hidden;
+}
 
 @media (min-width: 720px) {
   .masthead {
