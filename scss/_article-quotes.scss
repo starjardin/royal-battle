@@ -46,10 +46,16 @@ blockquote {
 }
 
 .quotes_container {
+  width: 100%;
   @include navigation-flex;
   align-items: center;
+  // justify-content: space-around;
 }
 
+
+blockquote {
+  margin: 1rem;
+}
 .profile a {
   display: block;
   height: 40px;
