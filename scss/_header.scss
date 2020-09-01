@@ -17,13 +17,10 @@
 
 .navigation-option {
   width: 200px;
-  align-items: center;
 }
 
-[name="menu"] {
+#menu {
   background-image: image("menu.svg");
-  background-color: rebeccapurple;
-  padding: 4rem;
 }
 
 .main-navigtion > ul {

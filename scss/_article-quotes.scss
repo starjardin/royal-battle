@@ -90,3 +90,30 @@ blockquote {
   padding-left: 10px;
   padding-right: 22px;
 }
+
+@media (min-width: $media-min-width) {
+  .article_quotes_container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  blockquote {
+    max-width: 493px;
+  }
+
+  blockquote:not(:nth-child(2)) {
+    margin-inline-end: auto;
+    margin-inline-start: 20%;
+  }
+
+  .article_quotes_text {
+    max-width: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .bnt.read_more {
+    max-width: 242px;
+  }
+}
