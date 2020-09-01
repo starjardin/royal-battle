@@ -50,3 +50,22 @@
   padding-top: 20px;
   padding-bottom: 30px;
 };
+
+@media (min-width: $media-min-width) {
+ .article_special .container {
+    background-position: left center;
+    background-image: image("special-big-bg.png");
+    background-size: cover;
+    padding-top: calc(100% * 260 / 920);
+ }
+
+ .special_heading,
+ .details-container {
+   padding-inline-start: calc(100% * 800 / 1440);
+   transform: translateY(-60px);
+ }
+
+ .special_container {
+    padding-left: 0;
+ }
+}

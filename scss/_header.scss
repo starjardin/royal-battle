@@ -1,7 +1,7 @@
 @import "variables";
-// .header-navigation {
-//     max-width: 455px;
-// }
+.header-navigation {
+    max-width: 455px;
+}
 
 .game-logo {
   display: block;
@@ -67,6 +67,7 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
 
 .header {
   position: absolute;
+  z-index: 1;
 }
 
 .masthead {
@@ -77,11 +78,11 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
   max-height: 960px;
 };
 
-// .masthead-wrapper {
-//   position: relative;
-//   margin: auto;
-//   height: 100%;
-// }
+.masthead-wrapper {
+  position: relative;
+  margin: auto;
+  height: 100%;
+}
 
 .masthead-container {
   position: absolute;
@@ -130,10 +131,42 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
   visibility: hidden;
 }
 
+.story {
+  display: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nexts {
+  width: 132px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.next:not(:nth-last-child(1)) {
+  width: 10px;
+  height: 10px;
+  border-radius: 50% ;
+  border: 1px solid $primary-color;
+}
+
+.next:nth-last-child(1) {
+  @include background;
+  background-image: image("switch.svg");
+}
+
+.next > span {
+  visibility: hidden;
+}
+
+.next:active {
+  background-color: $primary-color;
+}
+
 @media (min-width: 720px) {
   .masthead {
     @include background;
-    background-size: 100% 100%;
+    background-size: 100% center;
     background-image: image("header-big-bg.png");
   }
 }

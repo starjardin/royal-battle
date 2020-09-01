@@ -30,3 +30,22 @@
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+@media (min-width: 720px) {
+  .sos_container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 30px;
+  }
+
+  .image_container {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .sos-infos {
+    padding-left: calc(100% * 190 / 550);
+  }
+}
