@@ -10,6 +10,7 @@
 }
 
 .availability__subheading {
+  text-align: center;
   @include heading-spacing;
   text-transform: uppercase;
   padding-bottom: 45px;
@@ -17,6 +18,7 @@
 
 .availability__subheadquestion,
 .def_title {
+  text-align: center;
   @include subheading-spacing;
   text-transform: uppercase;
   padding-bottom: 15px;
@@ -46,4 +48,15 @@
 .def_details {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $media-min-width) {
+  .def_lists {
+    max-width: calc(100% * 570 / 1440);
+  }
+
+  .article_availability {
+    padding-bottom: 170px;
+    // background-image: radial-gradient();
+  }
 }
