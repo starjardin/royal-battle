@@ -102,8 +102,11 @@ blockquote {
   }
 
   blockquote:not(:nth-child(2)) {
-    margin-inline-end: auto;
     margin-inline-start: 20%;
+  }
+
+  blockquote:nth-child(2) {
+    margin-inline-end: 20%;
   }
 
   .article_quotes_text {
