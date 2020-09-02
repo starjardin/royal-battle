@@ -50,6 +50,42 @@
   border-top: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.body-footer {
-  display: none;
+@media (min-width: $media-min-width) {
+  .policy {
+    @include navigation-flex;
+    align-items: center;
+  }
+
+  .policy-lists {
+    @include navigation-flex;
+  }
+
+  .navigation_lists {
+    @include navigation-flex;
+  }
+
+  .list_icons {
+    // @include navigation-flex;
+    width: 100%;
+  }
+  
+  .footer_navigation_lists {
+    // @include navigation-flex;
+  }
+  .footer-lists  {
+    display: grid;
+  }
+
+  .policy-lists {
+    width: 443px;
+  }
+
+  .terms-of-services::after,
+  .terms-of-services::before {
+    display: none;
+  }
+
+  .game-logo {
+    display: block;
+  }
 }
