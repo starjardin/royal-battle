@@ -101,7 +101,7 @@ body {
   font-weight: 400;
   text-align: center;
   color: #ffffff;
-  background-color: #111111;
+  background-color: #080a0b;
   padding: 0; }
 
 h1,
@@ -323,7 +323,6 @@ option {
   flex-basis: 50%; }
 
 .list_icons {
-  width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -367,6 +366,14 @@ option {
 
 [href="/instagram"] {
   background-image: url("../img/twitch.svg"); }
+
+@media (minwidth: media-min-width) {
+  .navigation_list.main,
+  .navigation_list.about,
+  .navigation_list.game,
+  .navigation_list.system-requierments,
+  .navigation_list.quotes {
+    flex-basis: auto; } }
 
 .article_sos {
   text-align: start;
@@ -715,8 +722,9 @@ blockquote {
   blockquote {
     max-width: 493px; }
   blockquote:not(:nth-child(2)) {
-    margin-inline-end: auto;
     margin-inline-start: 20%; }
+  blockquote:nth-child(2) {
+    margin-inline-end: 20%; }
   .article_quotes_text {
     max-width: 430px;
     display: flex;
@@ -728,7 +736,7 @@ blockquote {
 .newsletter {
   padding-bottom: 61px; }
 
-.newsletter-container {
+.newsletter_info {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -771,12 +779,46 @@ blockquote {
 .newsletter__subheading {
   letter-spacing: 2px;
   line-height: 18px;
-  font-size: 18px; }
+  font-size: 18px;
+  font-size: 24px;
+  line-height: 24px; }
 
 .newsletter__info {
   font-family: "Open Sans";
   font-weight: 400;
   font-style: normal; }
+
+@media (min-width: 720px) {
+  .newsletter_info {
+    background: none; }
+  .newsletter {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-inline-start: calc(100% * 764 / 1440);
+    background-image: url("../img/newsletter-big-bg.png");
+    background-size: 50% 100%;
+    height: 650px;
+    background-position-y: center;
+    background-position-x: left; }
+  .newsletter-container {
+    height: 100vh;
+    max-height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .newsletter__heading {
+    padding-bottom: 65px; }
+  [action="post"] {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 65px; }
+  .newsletter_info {
+    padding: 0; }
+  [type="submit"] {
+    max-width: 260px;
+    margin-left: 17px; } }
 
 .game-logo {
   background-repeat: no-repeat;
@@ -824,5 +866,28 @@ blockquote {
 .policy {
   border-top: 1px solid rgba(255, 255, 255, 0.5); }
 
-.body-footer {
-  display: none; }
+@media (min-width: 720px) {
+  .policy {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .policy-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .navigation_lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .list_icons {
+    width: 100%; }
+  .footer-lists {
+    display: grid; }
+  .policy-lists {
+    width: 443px; }
+  .terms-of-services::after,
+  .terms-of-services::before {
+    display: none; }
+  .game-logo {
+    display: block; } }
