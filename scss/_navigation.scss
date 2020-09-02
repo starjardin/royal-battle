@@ -35,7 +35,7 @@
   color: $primary_color;
 }
 
-.navigation_list.main{
+.navigation_list.main {
   flex-basis: 33%;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .list_icons {
-  width: 100%;
+  // width: 100%;
   @include navigation-flex;
   @include reset-ul;
   justify-content: space-around;
@@ -99,4 +99,15 @@
 
 [href="/instagram"] {
   background-image: image("twitch.svg");
+}
+
+@media (minwidth : media-min-width) {
+  .navigation_list.main,
+  .navigation_list.about,
+  .navigation_list.game,
+  .navigation_list.system-requierments,
+  .navigation_list.quotes {
+    flex-basis: auto;
+  }
+
 }
