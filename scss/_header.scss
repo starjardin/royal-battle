@@ -1,45 +1,53 @@
-@import "variables";
-.header-navigation {
-    max-width: 455px;
+// @import "variables";
+
+
+.header {
+  text-align: start;
 }
 
-.game-logo {
+.game_logo {
   display: block;
-  height: 32px;
-  width: 32px;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/logo.svg");
+  @include background;
 }
 
-.header-navigation,
-.navigation-option {
-  @include navigation-flex;
-  max-width: 500px;
+.game_logo span {
+  opacity: 0;
 }
 
-.navigation-option {
-  width: 200px;
+[name="menu"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  background-image: url("../img/menu.svg");
 }
 
-#menu {
-  background-image: image("menu.svg");
-}
-
-.main-navigtion > ul {
-  @include reset-ul
+.main-navigation-list > a {
+  display: block;
+  color: $primary-color;
+  text-transform: $uppercase-text;
+  text-decoration: $text-decoration;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .main-navigation-list {
   list-style: $list-style;
 }
 
-.main-navigation-list > a {
-  color: $primary-color;
-  text-transform: $uppercase-text;
-  text-decoration: $text-decoration;
+body [type="checkbox"] {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/menu.svg");
 }
 
 .main-navigtion {
   padding: 1rem;
-  background-color: #f8f8f8;
+  background-color: #222222;
   position: absolute;
   z-index: 3;
   top: 0;
@@ -48,7 +56,7 @@
   width: 250px;
   height: 100vh;
   box-shadow: 0 0 50px rgba(0,0,0,.5);
-  transform: translateX(-110%);
+  transform: translateX(-210%);
   transition: transform 0.3s;
 }
 
@@ -71,6 +79,26 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
 .header {
   position: absolute;
   z-index: 1;
+  width: 90%;
+  top: 0;
+  padding-top: 1rem;
+}
+
+.header > .container {
+  @include navigation-flex;
+  align-items: center;
+}
+
+.main-navigtion {
+  order: 2;
+}
+
+.navigation-option {
+  order: 3;
+}
+
+[type="checkbox"] {
+  order: 4;
 }
 
 .masthead {
@@ -81,11 +109,6 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
   max-height: 960px;
 };
 
-.masthead-wrapper {
-  position: relative;
-  margin: auto;
-  height: 100%;
-}
 
 .masthead-container {
   position: absolute;
@@ -130,47 +153,54 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
    color: $secondary-color;
  }
 
+[for="menu"] {
+  opacity: 0;
+}
+
 [for="lang_dropdown"] {
   visibility: hidden;
 }
 
-.story {
-  display: none;
-  display: flex;
-  justify-content: space-between;
-}
+// .story {
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.nexts {
-  width: 132px;
-  display: flex;
-  justify-content: space-between;
-}
+// .nexts {
+//   width: 132px;
+//   display: flex;
+//   justify-content: space-between;
+// }
 
-.next:not(:nth-last-child(1)) {
-  width: 10px;
-  height: 10px;
-  border-radius: 50% ;
-  border: 1px solid $primary-color;
-}
+// .next:not(:nth-last-child(1)) {
+//   width: 10px;
+//   height: 10px;
+//   border-radius: 50% ;
+//   border: 1px solid $primary-color;
+// }
 
-.next:nth-last-child(1) {
-  @include background;
-  background-image: image("switch.svg");
-}
+// .next:nth-last-child(1) {
+//   @include background;
+//   background-image: image("switch.svg");
+// }
 
-.next > span {
-  visibility: hidden;
-}
+// .next > span {
+//   visibility: hidden;
+// }
 
-.next:active {
-  background-color: $primary-color;
-}
+// .next:active {
+//   background-color: $primary-color;
+// }
 
 @media (min-width: 720px) {
   .masthead {
     @include background;
     background-size: 100% center;
     background-image: image("header-big-bg.png");
+  }
+
+  .main-navigtion > ul {
+    @include navigation-flex;
   }
 
   .main-navigtion {
@@ -186,9 +216,6 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
   .main-navigation-lists {
     max-width: 612px;
     @include navigation-flex;
-  }
-
-  [for="menu"] {
-    display: none;
+    order: 2;
   }
 }
