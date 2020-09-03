@@ -1,5 +1,10 @@
 @import "variables";
 @import "fonts";
+html {
+  max-width: 1440px;
+  margin: auto;
+}
+
 body {
     @include font-family_openSans;
     font-weight: 400;
