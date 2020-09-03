@@ -31,6 +31,12 @@
   list-style: $list-style;
 }
 
+.main-navigation-list > a {
+  color: $primary-color;
+  text-transform: $uppercase-text;
+  text-decoration: $text-decoration;
+}
+
 .main-navigtion {
   padding: 1rem;
   background-color: #f8f8f8;
@@ -165,5 +171,24 @@ body [type="checkbox"]:checked ~ .main-navigtion label {
     @include background;
     background-size: 100% center;
     background-image: image("header-big-bg.png");
+  }
+
+  .main-navigtion {
+    transform: none;
+    width: 100%;
+    height: auto;
+    background: none;
+    position: static;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .main-navigation-lists {
+    max-width: 612px;
+    @include navigation-flex;
+  }
+
+  [for="menu"] {
+    display: none;
   }
 }
