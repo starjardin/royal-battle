@@ -11,62 +11,59 @@
   <body>
     <header class="header">
       <div class="container">
-        <div class="nav-container">
-          <nav class="header-navigation">
-            <h1 class="sos-logo">
-              <a href="/home_page" class="game_logo">
-                <img src="./img/logo.svg" alt="">
-              </a>
-            </h1>
-            <div class="navigation-option">
-              <form action="." method="GET">
-                <label for="lang_dropdown">
-                  Language
-                </label>
-                <select name="lang" id="lang_dropdown">
-                  <option lang="en" value="en" label="Eng">
-                  <option lang="ru" value="ru" label="русский">
-                  <opt class="process"ion lang="fr" value="fr" label="Français">
-                  <option lang="de" value="de" label="Deutsch">
-                </select>
-                <button type="submit" class="submit">Save</button>
-              </form>
-              <input type="checkbox" name="menu" id="menu" class="menu">
-              <nav class="main-navigtion">
-                <label for="menu">checkbox</label>
-                <ul class="main-navigation-lists">
-                  <li class="main-navigation-list">
-                    <a class="main-navigation-anchor main" href="/main">
-                    main
-                    </a>
-                  </li>
-                  <li class="main-navigation-list">
-                    <a class="main-navigation-anchor about" href="/about">
-                      About
-                    </a>
-                  </li>
-                  <li class="main-navigation-list">
-                    <a class="main-navigation-anchor game-features" href="/game-features">Game feature
-                    </a>
-                  </li>
-                  <li class="main-navigation-list">
-                    <a 
-                      class="main-navigation-anchor syetem-requierment" href="/syetem-requierment">
-                      System requirements
-                    </a>
-                  </li>
-                  <li class="main-navigation-list">
-                    <a class="main-navigation-anchor quotes " href="quotes">
-                      Quotes
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </nav>
+        <h1 class="sos-logo">
+          <a href="/home_page" class="game_logo">
+            <span>logo</span>
+          </a>
+        </h1>
+        <div class="navigation-option">
+          <form action="." method="GET">
+            <label for="lang_dropdown">
+              Language
+            </label>
+            <select name="lang" id="lang_dropdown">
+              <option lang="en" value="en" label="Eng">
+              <option lang="ru" value="ru" label="русский">
+              <option class="process" lang="fr" value="fr" label="Français">
+              <option lang="de" value="de" label="Deutsch">
+            </select>
+            <button type="submit" class="submit">Save</button>
+          </form>
         </div>
+        <input type="checkbox" name="menu" id="menu" class="menu">
+        <nav class="main-navigtion">
+          <label for="menu">checkbox</label>
+          <ul class="main-navigation-lists">
+            <li class="main-navigation-list">
+              <a class="main-navigation-anchor main" href="/main">
+              main
+              </a>
+            </li>
+            <li class="main-navigation-list">
+              <a class="main-navigation-anchor about" href="/about">
+                About
+              </a>
+            </li>
+            <li class="main-navigation-list">
+              <a class="main-navigation-anchor game-features" href="/game-features">Game feature
+              </a>
+            </li>
+            <li class="main-navigation-list">
+              <a 
+                class="main-navigation-anchor syetem-requierment" href="/syetem-requierment">
+                System requirements
+              </a>
+            </li>
+            <li class="main-navigation-list">
+              <a class="main-navigation-anchor quotes " href="quotes">
+                Quotes
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
+
     <main>
       <header class="masthead">
         <div class="container masthead-wrapper">
@@ -207,8 +204,8 @@
               </dd>
             </div>
           </dfn>
-        </article>
-      </div>
+        </div>
+      </article>
 
       <article class="article_quotes">
         <div class="container article_quotes_container">
@@ -356,12 +353,16 @@
             </div>
             <div class="form-contanier">
               <form action="post">
-                <label for="email">your email address</label>
-                <input type="email" name="email" id="email" placeholder="aliciliniavopir@gmail.com">
+                <fieldset>
+                  <label for="email">your email address</label>
+                  <input type="email" name="email" id="email" value="aliciliniavopir@gmail.com">
+                </fieldset>
                 <button type="submit" class="subscribe">Subscribe now
                 </button>
               </form>
             </div>
+          </div>
+        </div>
       </article>
     </main>
 
