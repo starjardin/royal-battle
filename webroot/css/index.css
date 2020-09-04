@@ -377,14 +377,24 @@ option {
 [href="/facebook"] {
   background-image: url("../img/facebook.svg"); }
 
+[href="/facebook"]:hover {
+  background-image: url("../img/facebook-blue.svg"); }
+
 [href="/twitter-white"] {
   background-image: url("../img/twitter-white.svg"); }
+
+[href="/twitter-white"]:hover {
+  background-image: url("../img/twitter-blue.svg");
+  fill: blue; }
 
 [href="/youtube"] {
   background-image: url("../img/youtube.svg"); }
 
 [href="/instagram"] {
   background-image: url("../img/twitch.svg"); }
+
+[href="/instagram"]:hover {
+  background-image: url("../img/twitch-hover.svg"); }
 
 @media (minwidth: media-min-width) {
   .navigation_list.main,
@@ -913,11 +923,39 @@ fieldset {
   .navigation_lists {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
-  .list_icons {
-    width: 100%; }
+    justify-content: space-between;
+    padding: 0; }
   .footer-lists {
-    display: grid; }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 95%;
+    align-items: center;
+    padding-block-end: 2rem; }
+  .footer_navigation_lists {
+    width: 99%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .navigation_lists {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%; }
+  .navigation_list.system-requierments,
+  .navigation_list.quotes,
+  .navigation_list.main,
+  .navigation_list.about,
+  .navigation_list.game {
+    flex-basis: auto; }
+  .game-logo {
+    width: 90px;
+    height: 90px; }
+  .navigation_list a {
+    width: 100%; }
   .policy-lists {
     width: 443px; }
   .terms-of-services::after,
