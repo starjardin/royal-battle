@@ -62,18 +62,44 @@
 
   .navigation_lists {
     @include navigation-flex;
+    padding: 0;
+  }
+ 
+  .footer-lists {
+    @include navigation-flex;
+    width: 95%;
+    align-items: center;
+    padding-block-end: 2rem;
   }
 
-  .list_icons {
-    // @include navigation-flex;
-    width: 100%;
-  }
-  
   .footer_navigation_lists {
-    // @include navigation-flex;
+    width: 99%;
+    @include navigation-flex;
   }
-  .footer-lists  {
-    display: grid;
+
+  .navigation_lists {
+    width: 70%;
+    @include navigation-flex;
+    align-items: center;
+    padding-inline-start: 10%;
+    padding-inline-end: 10%;
+  }
+
+  .navigation_list.system-requierments,
+  .navigation_list.quotes,
+  .navigation_list.main,
+  .navigation_list.about,
+  .navigation_list.game {
+    flex-basis: auto;
+  }
+
+  .game-logo {
+    width: 90px;
+    height: 90px;
+  }
+
+  .navigation_list a {
+    width: 100%;
   }
 
   .policy-lists {
