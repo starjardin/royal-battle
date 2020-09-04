@@ -89,8 +89,17 @@
   background-image: image("facebook.svg");
 }
 
+[href="/facebook"]:hover {
+  background-image: image("facebook-blue.svg");
+}
+
 [href="/twitter-white"] {
   background-image: image("twitter-white.svg");
+}
+
+[href="/twitter-white"]:hover {
+  background-image: image("twitter-blue.svg");
+  fill: blue;
 }
 
 [href="/youtube"] {
@@ -101,6 +110,10 @@
   background-image: image("twitch.svg");
 }
 
+[href="/instagram"]:hover {
+  background-image: image("twitch-hover.svg");
+}
+
 @media (minwidth : media-min-width) {
   .navigation_list.main,
   .navigation_list.about,
@@ -109,5 +122,4 @@
   .navigation_list.quotes {
     flex-basis: auto;
   }
-
 }
